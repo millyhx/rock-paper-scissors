@@ -8,27 +8,11 @@ var lost = 0;
 var draw = 0;
 
 /* Listen for the button clicks */
-$("#rock").click(function(event) {
-  var play_you = this.getAttribute("rock");
+$('button').click(function(event) {
+  var play_you = this.getAttribute('id');
   $("#play_you").text(play_you);
-  console.log(play_you);
-  /*var play_machine = computer_move();*/
-  /*compare(play_you, play_machine);*/
-});
-
-$("#paper").click(function(event) {
-  var play_you = this.getAttribute("paper");
-  $("#play_you").text(play_you);
-  console.log(play_you)
-  /*var play_machine = computer_move();*/
-  /*compare(play_you, play_machine);*/
-});
-
-$("#scissors").click(function(event) {
-  var play_you = this.getAttribute("scissors");
-  $("#play_you").text(play_you);
-  /*var play_machine = computer_move();*/
-  /*compare(play_you, play_machine);*/
+  var play_machine = computer_move();
+  compare(play_you, play_machine);
 });
 
 
@@ -42,7 +26,26 @@ function computer_move() {
   return play_machine;
 }
 
-function compare(you, machine)
+var verdict = 'lose';
+console.log(you + ' ' + machine);
+
+if (you == machine) {
+  verdict = 'draw';
+}
+
+if ((you == "rock") && (machine == "scissors")) {
+  verdict = 'win';
+}
+
+if ((you == "paper") && (machine == "rock")) {
+  verdict = 'win';
+}
+
+if ((you == "scissors") && (machine == "paper")) {
+  verdict = 'win';
+}
+
+
  switch (verdict) {
 
    case 'win':
@@ -64,7 +67,7 @@ function compare(you, machine)
 
 
 
- 
+
 
 
 
@@ -73,25 +76,6 @@ function compare(you, machine)
 
 
 /*
-  var verdict = 'lose';
-  console.log(you + ' ' + machine);
-
-  if (you == machine) {
-    verdict = 'draw';
-  }
-
-  if ((you == "rock") && (machine == "scissors")) {
-    verdict = 'win';
-  }
-
-  if ((you == "paper") && (machine == "rock")) {
-    verdict = 'win';
-  }
-
-  if ((you == "scissors") && (machine == "paper")) {
-    verdict = 'win';
-  }
-
   console.log(verdict);
   if (verdict == 'win') {
     $("#game_won").text(verdict);
@@ -117,4 +101,4 @@ function compare(you, machine)
   played++;
   $("#game_played").text(played);
 */
-}
+//}
