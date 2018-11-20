@@ -21,84 +21,42 @@ function computer_move() {
 
   play_machine = choices[play_machine];
   $("#play_machine").text(play_machine);
-  console.log('move: ' + play_machine);
-
   return play_machine;
 }
 
-var verdict = 'lose';
-console.log(you + ' ' + machine);
+function compare(you, machine){
+  var verdict = 'lose';
 
-if (you == machine) {
-  verdict = 'draw';
-}
-
-if ((you == "rock") && (machine == "scissors")) {
-  verdict = 'win';
-}
-
-if ((you == "paper") && (machine == "rock")) {
-  verdict = 'win';
-}
-
-if ((you == "scissors") && (machine == "paper")) {
-  verdict = 'win';
-}
-
-
- switch (verdict) {
-
-   case 'win':
-   won++;
-   $("#won").text(won);
-   break;
-
-   case 'lose':
-   lost++;
-   $("#lost").text(lost);
-   break;
-
-   case 'draw':
-   draw++;
-   $("#draw").text(draw);
-   break;
- }
-
-
-
-
-
-
-
-
-
-
-
-
-/*
-  console.log(verdict);
-  if (verdict == 'win') {
-    $("#game_won").text(verdict);
+  if ( you == machine ) {
+    verdict = 'draw';
+  } else if ((you == "rock") && (machine == "scissors")) {
+    verdict = 'win';
+  } else if ((you == "paper") && (machine == "rock")) {
+    verdict = 'win';
+  } else if  ((you == "scissors") && (machine == "paper")) {
+    verdict = 'win';
   }
 
-  if (verdict == 'win') {
+
+  switch (verdict) {
+    case 'win':
     won++;
-    $("game_won").text(won);
-  }
+    $("#game_won").text(won);
+    break;
 
-  if (verdict == 'lose') {
+    case 'lose':
     lost++;
-    $("game_lost").text(lost);
-  }
+    $("#game_lost").text(lost);
+    break;
 
-  if (verdict == 'draw') {
+    case 'draw':
     draw++;
-    $("game_draw").text(draw);
+    $("#game_draw").text(draw);
+    break;
   }
 
   $("#verdict").text(verdict);
 
   played++;
   $("#game_played").text(played);
-*/
-//}
+}
