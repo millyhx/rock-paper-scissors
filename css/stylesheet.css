@@ -4,4 +4,13 @@ body {
 
 h1 {
   margin-bottom:20px;
+  font-family: 'Gloria Hallelujah', cursive;
+}
+
+button {
+  margin-bottom:20px;
+}
+
+h2 {
+  font-family: 'Boogaloo', cursive;
 }
