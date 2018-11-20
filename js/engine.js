@@ -42,8 +42,37 @@ function computer_move() {
   return play_machine;
 }
 
-function compare(you, machine) {
+function compare(you, machine)
+ switch (verdict) {
 
+   case 'win':
+   won++;
+   $("#won").text(won);
+   break;
+
+   case 'lose':
+   lost++;
+   $("#lost").text(lost);
+   break;
+
+   case 'draw':
+   draw++;
+   $("#draw").text(draw);
+   break;
+ }
+
+
+
+
+
+
+
+
+
+
+
+
+/*
   var verdict = 'lose';
   console.log(you + ' ' + machine);
 
@@ -87,5 +116,5 @@ function compare(you, machine) {
 
   played++;
   $("#game_played").text(played);
-
+*/
 }
