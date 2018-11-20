@@ -1,16 +1,42 @@
+html {
+  background-color: #8fbbbc;
+}
+
+
 body {
   text-align:center;
+  margin-left:300px;
+  margin-right:300px;
+  margin-top:80px;
+  padding-bottom:30px;
+  padding-top:30px;
+  border-width:10px;
+  border-radius:20px;
 }
 
 h1 {
-  margin-bottom:20px;
+  margin-bottom:70px;
   font-family: 'Gloria Hallelujah', cursive;
+  font-size:60px;
 }
 
 button {
   margin-bottom:20px;
+
 }
 
 h2 {
   font-family: 'Boogaloo', cursive;
+  margin-bottom:40px;
+}
+
+h3 {
+  font-family: 'Graduate', cursive;
+}
+
+
+
+.current_move p {
+  font-size:70px;
+
 }
