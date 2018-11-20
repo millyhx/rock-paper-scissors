@@ -9,7 +9,7 @@ var draw = 0;
 
 /* Listen for the button clicks */
 $('button').click(function(event) {
-  var play_you = this.getAttribute('id');
+  var play_you = this.getAttribute('value');
   $("#play_you").text(play_you);
   var play_machine = computer_move();
   compare(play_you, play_machine);
