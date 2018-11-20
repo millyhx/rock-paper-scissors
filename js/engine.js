@@ -9,24 +9,26 @@ var draw = 0;
 
 /* Listen for the button clicks */
 $("#rock").click(function(event) {
-  var play_you = 'rock';
+  var play_you = this.getAttribute("rock");
   $("#play_you").text(play_you);
-  var play_machine = computer_move();
-  compare(play_you, play_machine);
+  console.log(play_you);
+  /*var play_machine = computer_move();*/
+  /*compare(play_you, play_machine);*/
 });
 
 $("#paper").click(function(event) {
-  var play_you = 'paper';
+  var play_you = this.getAttribute("paper");
   $("#play_you").text(play_you);
-  var play_machine = computer_move();
-  compare(play_you, play_machine);
+  console.log(play_you)
+  /*var play_machine = computer_move();*/
+  /*compare(play_you, play_machine);*/
 });
 
 $("#scissors").click(function(event) {
-  var play_you = 'scissors';
+  var play_you = this.getAttribute("scissors");
   $("#play_you").text(play_you);
-  var play_machine = computer_move();
-  compare(play_you, play_machine);
+  /*var play_machine = computer_move();*/
+  /*compare(play_you, play_machine);*/
 });
 
 
