@@ -179,7 +179,10 @@ font-size: 23px;
   margin-bottom:40px;
 }
 
-
+/*CARDS*/
+.card-body {
+  background-color:#fbc9d2;
+}
 
 
 /*MEDIA QUERIES*/
