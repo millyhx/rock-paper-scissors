@@ -7,6 +7,7 @@
   <link href="https://fonts.googleapis.com/css?family=Patrick+Hand" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css?family=Covered+By+Your+Grace|Shadows+Into+Light" rel="stylesheet">
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+  <link href="https://fonts.googleapis.com/css?family=Mali" rel="stylesheet">
   <link rel="stylesheet" href="css/stylesheet.css" />
 </head>
 
@@ -14,7 +15,9 @@
   <main id="page-content">
 
     <header>
-      <h1 class="text-center mt-5 ml-3 mr-3">Rock, Paper, Scissors</h1>
+      <div class="swing">
+      <h1 class="text-center mt-3 ml-3 mr-3">Rock, Paper, Scissors</h1>
+    </div>
     </header>
 
 
@@ -22,22 +25,23 @@
       <img src="images/rock-paper-scissor.jpg" />
     </div>
 <!--ROCK, PAPER, SCISSOR BUTTONS -->
-    <section class="choose-choice mt-5">
-      <button class="choice-button" id="rock" value="rock">Rock</button>
-      <button class="choice-button" id="paper" value="paper">Paper</button>
-      <button class="choice-button" id="scissors" value="scissors">Scissors</button>
+    <section class="choose-choice mt-3">
+      <button class="choice-button shrink" id="rock" value="rock">Rock</button>
+      <button class="choice-button shrink" id="paper" value="paper">Paper</button>
+      <button class="choice-button shrink" id="scissors" value="scissors">Scissors</button>
     </section>
 
 
     <section class="choose-choice-desktop">
-      <button class="btn" id="rock" value="rock">Rock</button>
-      <button class="btn" id="paper" value="paper">Paper</button>
-      <button class="btn" id="scissors" value="scissors">Scissors</button>
+      <button class="btn rotate" id="rock" value="rock">Rock</button>
+      <button class="btn rotate" id="paper" value="paper">Paper</button>
+      <button class="btn rotate" id="scissors" value="scissors">Scissors</button>
     </section>
 
 
 <section class="cards container text-center fluid mb-5">
-    <h2>Current move</h2>
+    <h2 class="mb-5">Current move</h2>
+    <div class="card-deck">
     <div class="card float-left" style="width: 18rem;">
   <div class="card-body">
     <h5 class="card-title"><b>You: </b></h5>
@@ -49,6 +53,7 @@
 <div class="card-body">
 <h5 class="card-title"><b>Machine: </b> </h5>
 <p><span id="play_machine"></span></p>
+</div>
 </div>
 </section>
 

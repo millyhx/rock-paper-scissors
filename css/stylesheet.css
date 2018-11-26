@@ -15,12 +15,20 @@ body {
 /*FONT STYLING */
 
 h1 {
+
 font-family: 'Covered By Your Grace', cursive;
+}
+
+.grow:hover
+{
+        -webkit-transform: scale(1.3);
+        -ms-transform: scale(1.3);
+        transform: scale(1.3);
 }
 
 h2 {
 text-align: center;
-font-family: monospace;
+font-family: 'Mali', cursive;
 margin-top: 5%;
 font-size: 40px;
 text-decoration: underline;
@@ -35,7 +43,96 @@ font-size: 23px;
     margin-top: 8rem!important;
 }
 
+/*ANIMATIONS*/
+@-webkit-keyframes swing
+{
+    15%
+    {
+        -webkit-transform: translateX(5px);
+        transform: translateX(5px);
+    }
+    30%
+    {
+        -webkit-transform: translateX(-5px);
+       transform: translateX(-5px);
+    }
+    50%
+    {
+        -webkit-transform: translateX(3px);
+        transform: translateX(3px);
+    }
+    65%
+    {
+        -webkit-transform: translateX(-3px);
+        transform: translateX(-3px);
+    }
+    80%
+    {
+        -webkit-transform: translateX(2px);
+        transform: translateX(2px);
+    }
+    100%
+    {
+        -webkit-transform: translateX(0);
+        transform: translateX(0);
+    }
+}
+@keyframes swing
+{
+    15%
+    {
+        -webkit-transform: translateX(5px);
+        transform: translateX(5px);
+    }
+    30%
+    {
+        -webkit-transform: translateX(-5px);
+        transform: translateX(-5px);
+    }
+    50%
+    {
+        -webkit-transform: translateX(3px);
+        transform: translateX(3px);
+    }
+    65%
+    {
+        -webkit-transform: translateX(-3px);
+        transform: translateX(-3px);
+    }
+    80%
+    {
+        -webkit-transform: translateX(2px);
+        transform: translateX(2px);
+    }
+    100%
+    {
+        -webkit-transform: translateX(0);
+        transform: translateX(0);
+    }
+}
+
+.swing:hover
+{
+        -webkit-animation: swing 1s ease;
+        animation: swing 1s ease;
+        -webkit-animation-iteration-count: 1;
+        animation-iteration-count: 1;
+}
+
 /*BUTTONS */
+.rotate:hover
+{
+        -webkit-transform: rotateZ(-30deg);
+        -ms-transform: rotateZ(-30deg);
+        transform: rotateZ(-30deg);
+}
+
+.shrink:hover
+{
+        -webkit-transform: scale(0.8);
+        -ms-transform: scale(0.8);
+        transform: scale(0.8);
+}
 
 .choose-choice-desktop {
   display:none;
@@ -109,10 +206,6 @@ font-size: 23px;
   #hero img {
     padding:10%;
   }
-
-  .card {
-    margin-left:90px;
-  }
 }
 
 @media only screen and (min-width: 1024px) {
@@ -160,10 +253,6 @@ h1 {
 
 body {
   padding:70px;
-}
-
-.card {
-  margin-left:90px;
 }
 
 }
