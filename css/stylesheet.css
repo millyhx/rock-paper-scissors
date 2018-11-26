@@ -1,42 +1,202 @@
-html {
-  background-color: #8fbbbc;
-}
-
-
+/*MAIN STYLING */
 body {
-  text-align:center;
-  margin-left:300px;
-  margin-right:300px;
-  margin-top:80px;
-  padding-bottom:30px;
-  padding-top:30px;
-  border-width:10px;
-  border-radius:20px;
+  background: url("../images/background.jpg");
+  padding:30px;
+
 }
+
+#page-content {
+  background-color:#F5F5F5;
+  border:3px solid #F5F5F5;
+  border-radius: 20px;
+}
+
+
+/*FONT STYLING */
 
 h1 {
-  margin-bottom:70px;
-  font-family: 'Gloria Hallelujah', cursive;
-  font-size:60px;
-}
-
-button {
-  margin-bottom:20px;
-
+font-family: 'Covered By Your Grace', cursive;
 }
 
 h2 {
-  font-family: 'Boogaloo', cursive;
+text-align: center;
+font-family: monospace;
+margin-top: 5%;
+font-size: 40px;
+text-decoration: underline;
+}
+
+p {
+font-family: 'Patrick Hand', cursive;
+font-size: 23px;
+}
+
+.mt-5, .my-5 {
+    margin-top: 8rem!important;
+}
+
+/*BUTTONS */
+
+.choose-choice-desktop {
+  display:none;
+}
+
+.choice-button {
+  display:block;
+  width:100%;
+  font-weight:300;
+  font-family: 'Patrick Hand', cursive;
+  font-size:40px;
+  text-align:center;
+  user-select: none;
+  border: 1px solid transparent;
+  padding: .375rem .75rem;
+  line-height: 1.5;
+  border-radius: .25rem;
+  transition: color .15s ease-in-out,background-color .15s ease-in-out,border-color .15s ease-in-out,box-shadow .15s ease-in-out;
+  margin-top:5%;
+}
+
+ #rock {
+  background-color: #ddb641;
+}
+
+  #paper {
+  background-color: #fa3168;
+}
+
+#scissors {
+  background-color: #2ea19c;
+}
+
+/*IMAGES */
+
+#hero img {
+  width:100%;
+  padding:5%;
+}
+
+
+/*RESULTS*/
+.list-group {
   margin-bottom:40px;
 }
 
-h3 {
-  font-family: 'Graduate', cursive;
+
+
+
+/*MEDIA QUERIES*/
+@media only screen and (min-width: 768px) {
+  h1 {
+    font-size:75px;
+  }
+
+  .choose-choice #rock {
+  width: 90%;
+  margin-left: 5%;
+  }
+
+  .choose-choice #paper {
+  width: 90%;
+  margin-left: 5%;
+  }
+
+  .choose-choice #scissors {
+  width: 90%;
+  margin-left: 5%;
+  }
+
+  #hero img {
+    padding:10%;
+  }
+
+  .card {
+    margin-left:90px;
+  }
 }
 
+@media only screen and (min-width: 1024px) {
+/*headings*/
+h1 {
+  font-size:85px;
+}
+/*buttons*/
+.choose-choice {
+  display:none;
+}
+
+.choose-choice-desktop {
+  display:block;
+  text-align:center;
+}
+
+.choose-choice-desktop #rock {
+  width:20%;
+  padding:30px;
+  margin-left:70px;
+  margin-right:60px;
+  font-size:30px;
+}
+
+.choose-choice-desktop #paper {
+  width:20%;
+  padding:30px;
+  font-size:30px;
+
+}
+
+.choose-choice-desktop #scissors {
+  width:20%;
+  padding:30px;
+  margin-left:70px;
+  margin-right:60px;
+  font-size:30px;
+}
+
+#hero img {
+  width:100%;
+  padding:15%;
+}
+
+body {
+  padding:70px;
+}
+
+.card {
+  margin-left:90px;
+}
+
+}
+
+@media only screen and (min-width: 1440px) {
+
+  .choose-choice-desktop #rock {
+    width:20%;
+    padding:50px;
+    margin-left:70px;
+    margin-right:60px;
+  }
+
+  .choose-choice-desktop #paper {
+    width:20%;
+    padding:50px;
+
+  }
+
+  .choose-choice-desktop #scissors {
+    width:20%;
+    padding:50px;
+    margin-left:70px;
+    margin-right:60px;
+  }
 
 
-.current_move p {
-  font-size:70px;
+  body {
+    padding:200px;
+  }
 
+  #hero img {
+    width:100%;
+    padding:20s%;
+  }
 }
