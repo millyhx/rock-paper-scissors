@@ -11,6 +11,14 @@ body {
   border-radius: 20px;
 }
 
+/*CARDS */
+ #you {
+  background-color: #fecbd2;
+}
+
+#machine {
+  background-color: #fecbd2;
+}
 
 /*FONT STYLING */
 
@@ -111,6 +119,26 @@ font-size: 23px;
     }
 }
 
+@keyframes bounce {
+	0%, 20%, 60%, 100% {
+		-webkit-transform: translateY(0);
+		transform: translateY(0);
+	}
+
+	40% {
+		-webkit-transform: translateY(-20px);
+		transform: translateY(-20px);
+	}
+
+	80% {
+		-webkit-transform: translateY(-10px);
+		transform: translateY(-10px);
+	}
+}
+
+
+
+
 .swing:hover
 {
         -webkit-animation: swing 1s ease;
@@ -164,6 +192,11 @@ font-size: 23px;
 
 #scissors {
   background-color: #2ea19c;
+}
+
+
+.choose-choice button:hover {
+	animation: bounce 1s;
 }
 
 /*IMAGES */
