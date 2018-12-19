@@ -1,4 +1,6 @@
-/*MAIN STYLING */
+/*--------------------
+  MAIN STYLING
+--------------------*/
 body {
   background: url("../images/background.jpg");
   padding:30px;
@@ -11,7 +13,9 @@ body {
   border-radius: 20px;
 }
 
-/*CARDS */
+/*--------------------
+  CARDS
+--------------------*/
  #you {
   background-color: #fecbd2;
 }
@@ -20,7 +24,13 @@ body {
   background-color: #fecbd2;
 }
 
-/*FONT STYLING */
+.card-body {
+  background-color:#fbc9d2;
+}
+
+/*--------------------
+  FONT STYLING
+--------------------*/
 
 h1 {
 
@@ -51,7 +61,9 @@ font-size: 23px;
     margin-top: 8rem!important;
 }
 
-/*ANIMATIONS*/
+/*--------------------
+  ANIMATIONS
+--------------------*/
 @-webkit-keyframes swing
 {
     15%
@@ -136,9 +148,6 @@ font-size: 23px;
 	}
 }
 
-
-
-
 .swing:hover
 {
         -webkit-animation: swing 1s ease;
@@ -147,7 +156,9 @@ font-size: 23px;
         animation-iteration-count: 1;
 }
 
-/*BUTTONS */
+/*--------------------
+  BUTTONS
+--------------------*/
 .rotate:hover
 {
         -webkit-transform: rotateZ(-30deg);
@@ -199,7 +210,9 @@ font-size: 23px;
 	animation: bounce 1s;
 }
 
-/*IMAGES */
+/*--------------------
+  IMAGES
+--------------------*/
 
 #hero img {
   width:100%;
@@ -207,18 +220,17 @@ font-size: 23px;
 }
 
 
-/*RESULTS*/
+/*--------------------
+  RESULTS
+--------------------*/
 .list-group {
   margin-bottom:40px;
 }
 
-/*CARDS*/
-.card-body {
-  background-color:#fbc9d2;
-}
-
-
-/*MEDIA QUERIES*/
+/*--------------------
+  MEDIA QUERIES
+--------------------*/
+/*PHONE SCREEN*/
 @media only screen and (min-width: 768px) {
   h1 {
     font-size:75px;
@@ -243,13 +255,14 @@ font-size: 23px;
     padding:10%;
   }
 }
-
+/*LAPTOP*/
 @media only screen and (min-width: 1024px) {
-/*headings*/
+/*LAPTOP*/
+
 h1 {
   font-size:85px;
 }
-/*buttons*/
+
 .choose-choice {
   display:none;
 }
@@ -292,9 +305,9 @@ body {
 }
 
 }
-
+/*LARGE SCREEN*/
 @media only screen and (min-width: 1440px) {
-
+/*LARGE SCREEN*/
   .choose-choice-desktop #rock {
     width:20%;
     padding:50px;

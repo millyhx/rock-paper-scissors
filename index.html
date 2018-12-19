@@ -16,27 +16,28 @@
 
     <header>
       <div class="swing">
-      <h1 class="text-center mt-3 ml-3 mr-3">Rock, Paper, Scissors</h1>
-    </div>
+        <h1 class="text-center mt-3 ml-3 mr-3">Rock, Paper, Scissors</h1>
+      </div>
     </header>
 
 
     <div id="hero">
       <img src="images/rock-paper-scissor.jpg" />
     </div>
-<!--ROCK, PAPER, SCISSOR BUTTONS -->
+    <!--ROCK, PAPER, SCISSOR BUTTONS -->
     <section class="choose-choice mt-3">
+
       <button class="choice-button" id="rock" value="rock">Rock</button>
-<<<<<<< HEAD
+
       <button class="choice-button" id="scissors" value="scissors">Scissors</button>
-=======
-        <button class="choice-button" id="scissors" value="scissors">Scissors</button>
->>>>>>> gh-pages
+
+      <button class="choice-button" id="scissors" value="scissors">Scissors</button>
+
       <button class="choice-button" id="paper" value="paper">Paper</button>
 
     </section>
 
-
+    <!--ROCK, PAPER, SCISSOR BUTTONS -->
     <section class="choose-choice-desktop">
       <button class="btn rotate" id="rock" value="rock">Rock</button>
       <button class="btn rotate" id="paper" value="paper">Paper</button>
@@ -44,25 +45,26 @@
 
     </section>
 
+    <!--SHOWING USER AND COMPUTER MOVES -->
+    <section class="cards container text-center fluid mb-5">
+      <h2 class="mb-5">Current move</h2>
+      <div class="card-deck">
+        <div class="card float-left" style="width: 18rem;">
+          <div class="card-body" id="you">
+            <h5 class="card-title"><b>You: </b></h5>
+            <p><span id="play_you"></span></p>
+          </div>
+        </div>
 
-<section class="cards container text-center fluid mb-5">
-    <h2 class="mb-5">Current move</h2>
-    <div class="card-deck">
-    <div class="card float-left" style="width: 18rem;">
-  <div class="card-body" id="you">
-    <h5 class="card-title"><b>You: </b></h5>
-    <p><span id="play_you"></span></p>
-  </div>
-</div>
+        <div class="card float-left" style="width: 18rem;">
+          <div class="card-body" id="machine">
+            <h5 class="card-title"><b>Machine: </b> </h5>
+            <p><span id="play_machine"></span></p>
+          </div>
+        </div>
+    </section>
 
-<div class="card float-left" style="width: 18rem;">
-<div class="card-body" id="machine">
-<h5 class="card-title"><b>Machine: </b> </h5>
-<p><span id="play_machine"></span></p>
-</div>
-</div>
-</section>
-
+    <!--USER RESULTS -->
     <section class="container">
 
       <h2 class="mt-5">Result: <span id="verdict"></span></h2>
